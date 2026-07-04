@@ -32,7 +32,7 @@ class RedisAdapter {
 
         if ( class_exists( '\\Redis' ) ) {
             try {
-                $r = new \\Redis();
+                $r = new \Redis();
                 $r->connect( $this->host, $this->port, 1 );
                 if ( ! empty( $this->password ) ) $r->auth( $this->password );
                 $r->flushAll();

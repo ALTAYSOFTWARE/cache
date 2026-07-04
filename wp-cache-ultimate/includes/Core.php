@@ -31,10 +31,10 @@ class Core {
 
         // WP-CLI
         if ( defined( 'WP_CLI' ) && WP_CLI ) {
-            \\WP_CLI::add_command( 'wcu clear', function() {
+            \WP_CLI::add_command( 'wcu clear', function() {
                 $res = Cleaner::run_all_blocking();
-                \\WP_CLI::success( 'WCU: clear finished' );
-                \\WP_CLI::log( wp_json_encode( $res ) );
+                \WP_CLI::success( 'WCU: clear finished' );
+                \WP_CLI::log( wp_json_encode( $res ) );
             } );
         }
     }

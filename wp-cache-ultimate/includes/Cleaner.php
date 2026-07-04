@@ -53,7 +53,7 @@ class Cleaner {
                     $res['result'] = 'unknown_action';
             }
             wp_send_json_success( $res );
-        } catch ( \\Throwable $e ) {
+        } catch ( \Throwable $e ) {
             wp_send_json_error( $e->getMessage(), 500 );
         }
     }
@@ -139,7 +139,7 @@ class Cleaner {
                 case 'done':
                     return array( 'note' => 'already_done', 'results' => $job['results'] );
             }
-        } catch ( \\Throwable $e ) {
+        } catch ( \Throwable $e ) {
             $job['status'] = 'error';
             $job['stage'] = 'error';
             $job['error'] = $e->getMessage();
@@ -247,7 +247,7 @@ class Cleaner {
         if ( function_exists( 'wp_cache_flush' ) ) {
             try {
                 return wp_cache_flush() ? 'ok' : 'failed';
-            } catch ( \\Throwable $e ) {
+            } catch ( \Throwable $e ) {
                 return 'failed:' . $e->getMessage();
             }
         }
@@ -255,7 +255,7 @@ class Cleaner {
             try {
                 $ra = new Integrations\\RedisAdapter();
                 return $ra->flush() ? 'redis_ok' : 'redis_failed';
-            } catch ( \\Throwable $e ) {
+            } catch ( \Throwable $e ) {
                 return 'redis_failed:'.$e->getMessage();
             }
         }
@@ -267,7 +267,7 @@ class Cleaner {
             try {
                 opcache_reset();
                 return 'ok';
-            } catch ( \\Throwable $e ) {
+            } catch ( \Throwable $e ) {
                 return 'failed:' . $e->getMessage();
             }
         }
