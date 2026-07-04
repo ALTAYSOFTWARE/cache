@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+.wcu-wrap { padding:22px; font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial; background:#f2f7fb; }
+.wcu-topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; gap:12px; }
+.wcu-title h1 { margin:0; font-size:20px; }
+.wcu-pro { background:#ffedd5;color:#c2410c;font-weight:700;padding:2px 8px;border-radius:6px;margin-left:8px;font-size:12px;vertical-align:middle; }
+.wcu-sub { margin:2px 0 0;color:#64748b;font-size:13px; }
+.wcu-actions { display:flex; gap:10px; align-items:center; }
+.wcu-btn { padding:8px 12px;border-radius:8px;border:1px solid transparent;font-weight:600; text-decoration:none; display:inline-block; cursor:pointer; }
+.wcu-btn-outline { background:transparent;color:#2563eb;border:1px solid #cfe0ff;padding:8px 12px;border-radius:8px; }
+.wcu-btn-danger { background:#ef4444;color:#fff;border-radius:8px;padding:10px 14px; box-shadow:0 6px 20px rgba(239,68,68,0.12); border:none; }
+.wcu-grid { display:flex; gap:20px; align-items:flex-start; }
+.wcu-left { width:220px; }
+.wcu-sidebar { background:#0b1220;color:#fff;padding:14px;border-radius:10px;min-height:520px;box-shadow:0 8px 24px rgba(2,6,23,0.06); }
+.wcu-sidebar ul{list-style:none;padding:0;margin:0}
+.wcu-sidebar li{padding:10px;border-radius:6px;color:#cbd5e1;margin-bottom:6px;cursor:pointer}
+.wcu-sidebar li.active{background:#0ea5a4;color:#fff;font-weight:700}
+.wcu-main{flex:1}
+.wcu-cards{display:flex;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+.card{background:#fff;padding:16px;border-radius:10px;box-shadow:0 8px 24px rgba(2,6,23,0.04);width:220px}
+.card .label{color:#6b7280;font-size:13px}
+.card .value{font-weight:700;margin-top:8px;font-size:18px}
+.wcu-dashboard-main{display:flex;gap:18px;align-items:flex-start}
+.wcu-score{width:320px;background:#fff;padding:20px;border-radius:10px;text-align:center;box-shadow:0 8px 24px rgba(2,6,23,0.04)}
+.score-circle{height:120px;width:120px;border-radius:50%;background:#ecfdf5;display:flex;align-items:center;justify-content:center;font-size:36px;color:#059669;margin:0 auto 12px}
+.wcu-quick{flex:1;background:#fff;padding:20px;border-radius:10px;box-shadow:0 8px 24px rgba(2,6,23,0.04)}
+.quick-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.wcu-quick .button{padding:8px 12px;border-radius:8px;border:1px solid #e6eef6;background:transparent;cursor:pointer}
+.wcu-result{margin-top:14px;background:#fff;padding:14px;border-radius:8px;border:1px solid #eef6fb}
+#wcu-result-pre{white-space:pre-wrap;word-break:break-word;font-size:13px;color:#0b1220}
